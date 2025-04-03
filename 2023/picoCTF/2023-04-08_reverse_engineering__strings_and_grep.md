@@ -1,6 +1,6 @@
 # Reverse Engineering / strings & grep
 
-This is a write-up of my solution to these challenges from the [2023 picoCTF](/posts/2023_picoctf):
+This is a write-up of my solution to these challenges from the [2023 picoCTF](index.md):
 
 - Reverse Engineering / [Reverse](https://play.picoctf.org/practice/challenge/372) (100 Points)
 - Reverse Engineering / [Safe Opener 2](https://play.picoctf.org/practice/challenge/375) (100 Points)

@@ -1,6 +1,6 @@
 # General Skills / Special(er)
 
-This is a write-up of my solution to these challenges from the [2023 picoCTF](/posts/2023_picoctf):
+This is a write-up of my solution to these challenges from the [2023 picoCTF](index.md):
 
 - General Skills / [Special](https://play.picoctf.org/practice/challenge/377) (300 Points)
 - General Skills / [Specialer](https://play.picoctf.org/practice/challenge/378) (400 Points)

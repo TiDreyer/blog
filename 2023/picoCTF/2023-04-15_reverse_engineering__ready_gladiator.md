@@ -1,6 +1,6 @@
 # Reverse Engineering / Ready Gladiator
 
-This is a write-up of my solution to these challenges from the [2023 picoCTF](/posts/2023_picoctf):
+This is a write-up of my solution to these challenges from the [2023 picoCTF](index.md):
 
 - Reverse Engineering / [Ready Gladiator 0](https://play.picoctf.org/practice/challenge/368) (100 Points)
 - Reverse Engineering / [Ready Gladiator 1](https://play.picoctf.org/practice/challenge/369) (200 Points)

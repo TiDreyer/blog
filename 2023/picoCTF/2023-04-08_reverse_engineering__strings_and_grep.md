@@ -1,10 +1,4 @@
-+++
-layout = "post"
-draft = "false"
-date = "2023-04-08"
-title = "Reverse Engineering / strings & grep"
-tags = ["writeup", "picoCTF", "reverse engineering", "strings", "grep"]
-+++
+# Reverse Engineering / strings & grep
 
 This is a write-up of my solution to these challenges from the [2023 picoCTF](/posts/2023_picoctf):
 

@@ -1,6 +1,4 @@
----
-title: (COLLECTION) picoCTF 2023
----
+# picoCTF 2023
 
 The [picoCTF](https://www.picoctf.org/) is an annual CTF organized by the Carnegie Mellon University.
 It is aimed at US students from middle school to undergrad levels and regarded as a good beginner CTF.

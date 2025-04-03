@@ -1,10 +1,4 @@
-+++
-layout = "post"
-draft = "true"
-date = "2023-04-01"
-title = "Cryptography / Power Analysis"
-tags = ["writeup", "picoCTF", "cryptography", "AES"]
-+++
+# Cryptography / Power Analysis
 
 This is a write-up of my solution to these challenges from the [2023 picoCTF](/ctfs/2023_picoctf):
 

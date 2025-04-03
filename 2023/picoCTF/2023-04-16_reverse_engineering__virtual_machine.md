@@ -1,10 +1,4 @@
-+++
-layout = "post"
-draft = "false"
-date = "2023-04-16"
-title = "Reverse Engineering / Virtual Machine"
-tags = ["writeup", "picoCTF", "reverse engineering", "collada"]
-+++
+# Reverse Engineering / Virtual Machine
 
 This is a write-up of my solution to these challenges from the [2023 picoCTF](/posts/2023_picoctf):
 

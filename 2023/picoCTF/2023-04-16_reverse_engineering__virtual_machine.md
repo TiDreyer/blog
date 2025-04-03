@@ -1,6 +1,6 @@
 # Reverse Engineering / Virtual Machine
 
-This is a write-up of my solution to these challenges from the [2023 picoCTF](index.md):
+This is a write-up of my solution to these challenges from the [2023 picoCTF](README.md):
 
 - Reverse Engineering / [Virtual Machine 0](https://play.picoctf.org/practice/challenge/385) (100 Points)
 - Reverse Engineering / [Virtual Machine 1](https://play.picoctf.org/practice/challenge/386) (300 Points)

@@ -1,6 +1,6 @@
 # Cryptography / Power Analysis
 
-This is a write-up **DRAFT** of my solution to these challenges from the [2023 picoCTF](index.md):
+This is a write-up **DRAFT** of my solution to these challenges from the [2023 picoCTF](README.md):
 
 - Cryptography / [Power Analysis: Warmup](https://play.picoctf.org/practice/challenge/366) (200 Points)
 - Cryptography / [Power Analysis: Part 1](https://play.picoctf.org/practice/challenge/364) (400 Points)

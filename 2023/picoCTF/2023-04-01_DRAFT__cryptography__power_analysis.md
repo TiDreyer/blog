@@ -82,21 +82,21 @@ Which refers to this introduction by Colin O'Flynn: https://www.youtube.com/watc
 
 First, I generate 100 samples randomly and store them in the same format as the ones given for Part 2. I hope this will save time later.
 For a first look, I then plot all traces on top of each other:
-![asdf](/images/2023_picoctf/2023-03-27_15-03_AES_traces.png)
+![asdf](img/2023-03-27_15-03_AES_traces.png)
 
 They seem to have the same structure, where the 10 rounds of 128-bit [AES](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard) can be easily identified.
 
 Taking a closer look at just one trace, there is a lot of noise that makes it hard to identify different sections:
-![asdf](/images/2023_picoctf/2023-03-27_15-09_AES_traces.png)
+![asdf](img/2023-03-27_15-09_AES_traces.png)
 
 Watching Colin O'Flynn's video, the low and high regions should be the charge and pre-charge phases:
-![asdf](/images/2023_picoctf/2023-03-27_15-24-22.png)
+![asdf](img/2023-03-27_15-24-22.png)
 
 He then analyses for a hypothetical key(-byte), how many output pins would be on high, after one round of SRA:
-![asdf](/images/2023_picoctf/2023-03-27_15-48-38.png)
+![asdf](img/2023-03-27_15-48-38.png)
 
 These numbers should then be correlated to the power measurement at some point in time. We don't need to know the exact point in time, since we can just use a sliding window and find the highest correlation in that
-![asdf](/images/2023_picoctf/2023-03-27_15-56-13.png)
+![asdf](img/2023-03-27_15-56-13.png)
 
 So the approach should be similar as in the "warm up" challenge:
 - I pick a random secret (`00000000000000000000000000000000`)
@@ -105,8 +105,8 @@ So the approach should be similar as in the "warm up" challenge:
 In the end I should be left with a very probable key.
 
 Since I don't know the input to the second round of AES, it probably makes sense to limit my search to the first section of the trace. This should be contained in the range $290$ to $530$:
-![asdf](/images/2023_picoctf/2023-03-27_16-48_AES_traces.png)
-![asdf](/images/2023_picoctf/2023-03-27_16-49_AES_traces.png)
+![asdf](img/2023-03-27_16-48_AES_traces.png)
+![asdf](img/2023-03-27_16-49_AES_traces.png)
 
 ...writing lots of code...
 

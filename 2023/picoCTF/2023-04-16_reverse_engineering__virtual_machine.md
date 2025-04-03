@@ -16,11 +16,11 @@ The `.dae`-suffix is used by [`collada`-files](https://en.wikipedia.org/wiki/COL
 I could import the file in [Blender](https://www.blender.org/)
 which on first sight only shows a black box of lego bricks with the red and blue axle mentioned in the challenge description sticking out:
 
-![a black box of lego bricks](/images/2023_picoctf/2023-03-14_19-18-08.png)
+![a black box of lego bricks](img/2023-03-14_19-18-08.png)
 
 Deleting some of the bricks reveals the inner mechanism:
 
-![lego gears are inside the black box](/images/2023_picoctf/2023-03-14_19-17-05.png)
+![lego gears are inside the black box](img/2023-03-14_19-17-05.png)
 
 This is a rather simple mechanism.
 The big red gear has 20 teeth, the two smaller ones both have 8, thus the gear ratio is `40:8:8 = 5:1`.
@@ -63,9 +63,9 @@ Also the input given in the question seems to be random for each attempt, so the
 
 The 3D model is not hiding any details this time, but the mechanism is much more complex:
 
-![3D view of the gear mechanism](/images/2023_picoctf/2023-03-15_17-35-37.png)
+![3D view of the gear mechanism](img/2023-03-15_17-35-37.png)
 
-![3D view of the gear mechanism](/images/2023_picoctf/2023-03-15_17-36-46.png)
+![3D view of the gear mechanism](img/2023-03-15_17-36-46.png)
 
 The challenge gave three hints:
 1. The supporting structure for the machine has been removed from the given design doc.
@@ -78,12 +78,12 @@ I'd have to calculate the gear ratio again like for the simple machine in the pr
 On http://gears.sariel.pl/ I found an overview of 32 different types of Lego gears.
 Here is a cropped down version of just the seven ones used in this challenge:
 
-![types of lego gears](/images/2023_picoctf/Lego_gears_teeth_count.png)
+![types of lego gears](img/Lego_gears_teeth_count.png)
 
 This list includes a [differential](https://en.wikipedia.org/wiki/Differential_(mechanical_device)),
 which has one input axle on each side:
 
-![differential gear](/images/2023_picoctf/differential.png)
+![differential gear](img/differential.png)
 
 The body of the differential will turn with the average number of rotations of the two inputs.
 This includes direction, so if one input does 1 rotation clockwise and the other input 1 rotation counter-clockwise,
@@ -92,7 +92,7 @@ the differential will not move at all.
 With this information, it is a matter of going through the entire mechanism and determining all the gear ratios.
 Luckily, they all turn out to be nice whole numbers:
 
-![asdf](/images/2023_picoctf/gear_analysis_2.png)
+![asdf](img/gear_analysis_2.png)
 
 To check my calculation (and prepare for the interactive part of the challenge),
 I wrote this python script, which simulates the entire gear train:
